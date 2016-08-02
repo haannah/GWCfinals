@@ -1,4 +1,8 @@
 hello world
 hello
 adding this from brackets
+<<<<<<< HEAD
 what
+=======
+adding more
+>>>>>>> origin/hi
