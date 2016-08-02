@@ -9,9 +9,18 @@ var b = 156;
 var e = 200;
 var u = 500;
 
+var context = canvas.getContext('2d');
+      var imageObj = new Image();
+
+      imageObj.onload = function() {
+        context.drawImage(imageObj, 0, 0);
+      };
+      imageObj.src = 'japan.jpg';
+
 void setup(){
     size(width,height);
 };
+
 void car(x,y,r,g,b){
     fill(r,g,b);
     rect(x,y,60,27);
@@ -48,27 +57,27 @@ void ground(y){
     rect(0,y,width,200);
 }
 
-void draw(){
-    background(196,242,249);
-    fill(196,242,249);
-    rect(0,100,width,height);
-    fill(33,33,33);
-    rect(0,305,width,50);
-    road(330);
-    ground(350);
-    biulding(u,210,21,21,135);
-     u+=1;
-    if (u >= width){
-        u=-100;
-    }
-    sun(e,80,222,196,25);
-    e+=1;
-    if (e >= width){
-        e=-100;
-    }
-    car(c,290,r,g,b);
-    c-=1;
-    if (c <= 0){
-        c = 600;
-    }
-};
+//void draw(){
+////    background(196,242,249);
+//    fill(196,242,249);
+//    rect(0,100,width,height);
+//    fill(33,33,33);
+//    rect(0,305,width,50);
+//    road(330);
+//    ground(350);
+//    biulding(u,210,21,21,135);
+//     u+=1;
+//    if (u >= width){
+//        u=-100;
+//    }
+//    sun(e,80,222,196,25);
+//    e+=1;
+//    if (e >= width){
+//        e=-100;
+//    }
+//    car(c,290,r,g,b);
+//    c-=1;
+//    if (c <= 0){
+//        c = 600;
+//    }
+//};
