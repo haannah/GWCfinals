@@ -1,0 +1,12 @@
+hello world
+hello
+adding this from brackets
+<<<<<<< HEAD
+<<<<<<< HEAD
+what
+=======
+adding more
+>>>>>>> origin/hi
+=======
+adding mores
+>>>>>>> origin/hi
